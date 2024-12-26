@@ -1,0 +1,17 @@
+- avatar: 'https://tcxx.info/wp-content/themes/StarryW/images/bg/me.jpg'
+  social:
+    twitter: 'Tiancaixinxin'
+    blog: 'https://tcxx.info/'
+    github: 'TCXX'
+  title: 'La vida de Juan'
+  name: 'Hola'
+  description: 'Mi nombre es Juan'
+
+- avatar: 'https://avatars.githubusercontent.com/u/21162238?v=4'
+  social:
+    twitter: 'Tiancaixinxin'
+    blog: 'https://www.xqy404.com/'
+    github: 'QuentinHsu'
+  title: 'Web Developer'
+  name: 'Quentin Hau'
+  description: '人生本就過的不愉快 那就來點羅曼蒂克'
