@@ -37,7 +37,7 @@ interface Props {
             </p>
         )}
 
-        <div class="mt-7 grid w-full gap-3 sm:inline-flex">
+        <div class="mt-7 grid w-full gap-3 sm:inline-flex text-neutral-700">
             {primaryBtn && <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />}
             {secondaryBtn && <SecondaryCTA title={secondaryBtn} url={secondaryBtnURL} />}
         </div>
@@ -49,7 +49,7 @@ interface Props {
                 <Image
                     src={src}
                     alt={alt}
-                    class="h-full w-[320px] scale-100 object-cover object-center"
+                    class=" banner h-full w-[320px] scale-100 object-cover object-center"
                     draggable="false"
                     loading="eager"
                     format="avif"
@@ -59,3 +59,8 @@ interface Props {
         </div>
     </div>
 </section>
+<style>
+    .banner {
+        mask-image: linear-gradient(#000 90%, transparent);
+    }
+</style>
