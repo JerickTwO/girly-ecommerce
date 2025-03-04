@@ -28,7 +28,7 @@ const postMap: Map<string, CollectionEntry<"posts">[]> = (
 
 const categories = await getCollection("categories");
 const description =
-    "Here are some categories that godruoyi is interested in, including Laravel, Golang, and her life.";
+    "Descubre nuestra exclusiva colección de productos para realzar tu belleza natural. Todo lo que necesitas para verte radiante.";
 const URL = Astro.url.href;
 ---
 
@@ -51,7 +51,7 @@ const URL = Astro.url.href;
         },
     }}
 >
-    <MainSection title="Categories" subTitle={description} />
+    <MainSection title="Productos" subTitle={description} />
 
     <section
         class="mx-auto px-4 py-10 sm:px-6 lg:px-8 lg:pt-10 lg:py-14 2xl:max-w-full"
@@ -67,6 +67,7 @@ const URL = Astro.url.href;
                         description={c.data.description}
                         count={postMap.get(c.slug)?.length ?? 0}
                         imageUrl={c.data.imageUrl ?? "/images.jpg"}
+                        price={c.data.price ?? 0}
                         publishDate={timeago(
                             postMap.get(c.slug)?.[0]?.data?.pubDate
                         )}

@@ -28,11 +28,12 @@ const posts = defineCollection({
 })
 
 const categoryCollection = defineCollection({
-    type: 'content',
+    type: 'data',
     schema: () => z.object({
         title: z.string(),
         description: z.string(),
         imageUrl: z.string().optional(),
+        price: z.number().optional(),
     }),
 })
 

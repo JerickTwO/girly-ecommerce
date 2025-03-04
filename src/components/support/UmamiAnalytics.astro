@@ -1,13 +1,17 @@
 ---
-import { Settings } from '@/config'
+import { Settings } from "@/config";
 
-const ID = Settings?.UmamiAnalytics?.dataWebsiteID
-const enable = Settings?.UmamiAnalytics?.enable
+const ID = Settings?.UmamiAnalytics?.dataWebsiteID;
+const enable = Settings?.UmamiAnalytics?.enable;
 ---
 
 {
     enable && (
-        <script defer src="https://cloud.umami.is/script.js" data-website-id=`${ID}`></script>
+        <script
+            is:inline
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id={`${ID}`}
+        />
     )
 }
-
