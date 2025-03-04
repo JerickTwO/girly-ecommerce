@@ -32,6 +32,7 @@ const categoryCollection = defineCollection({
     schema: () => z.object({
         title: z.string(),
         description: z.string(),
+        imageUrl: z.string().optional(),
     }),
 })
 

@@ -96,6 +96,7 @@ class BlogToMarkdown {
         return `---
 title: "${post.title}"
 description: "${post.description}"
+imageUrl: "${post.imageUrl}"
 pubDate: "${this.formatDate(post.pubDate)}"
 category: "${post.category.slug}"
 cardImage: "${post.banner}"
@@ -113,6 +114,7 @@ ${post.content}
             return {
                 title: p.title,
                 description: p.excerpt,
+                imageUrl: p.imageUrl,
                 pubDate: p.created_at,
                 banner: p.banner,
                 category_id: p.category_id,
